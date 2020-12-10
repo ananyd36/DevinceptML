@@ -1,7 +1,7 @@
 # Learnings from the Module
 ## Supervised Learning
 * Supervised Learning is a machine learning approach where we are given labelled inputs i,e with targets.For each input we will have a mapped target with which we will train the model.<br>Example: We are given characteristic physical features of list of fruits as features and the corressponding fruit name as target.
-<img src = "fruit.png"><br>
+<img src = "images/fruit.png"><br>
 ### There are two types of Algorithms in Machine Learning(Supervised Approach)
 1. Regression
 2. Classification
@@ -15,13 +15,13 @@
 * **Linear Regression**<br>
   This is a predictive modelling approach where we will be finding a Linear relationship between the input variables and output variables.
   The equation has the form Y= B0 + B1X, where Y is the dependent variable (that's the variable that goes on the Y axis), X is the independent variable (i.e. it is plotted on the X axis), B0 is the slope of the line and B1 is the y-intercept.
-  <img src = "linear.png">
+  <img src = "images/linear.png">
   The steps are using the datapoints we fit them to the line equation and we calculate either of the performance metrics(Mean Squared Error,Mean Absolute Error) and try to minimize the error after comparing with the labelled target.
   We initialise the parameters of the model(B1)to a certain value (usually randomly) and calculate this error for the whole training data. We iteratively modify these parameters in order to minimise this error. This is done with algorithms such as Gradient descent.
 * **Logistic Regression**<br>
   This a different type of regression approach which is basically used for classification problems(Mostly binary classification).We will be fitting a line for segregating each class and since it will be a linear line thats why its termed as regression.
   So after we fit a linear line we pass the datapoint value in a non-linear function(sigmoid) and based on the result we classifiy the datapoint.
-  <img src = "log.png">
+  <img src = "images/log.png">
 ### Classification
 * Classification is an supervised algorithm where the target data is in categories i.e discrete values rather continuous values.There are many algorithms which solves this problem of classification.
 * **Types of Classification Algorithms**<br>
@@ -50,7 +50,7 @@
   2. Dimensionaltiy Reduction
   3. Anomaly Detection
 * Imagine you have many faces images and no other data is given on those images. Using those images we have to cluster the ones similar i.e smiley faces in one cluster,sad faces in another cluster and so on.
-<img src = "faces.png"><br>
+<img src = "images/faces.png"><br>
 ### Clustering Analysis
 Cluster is a group of objects that belongs to the same class. In other words, similar objects are grouped in one cluster and dissimilar objects are grouped in another cluster.
   1. A cluster of data objects can be treated as one group.
@@ -82,18 +82,18 @@ Cluster is a group of objects that belongs to the same class. In other words, si
 * **Classification Measures**
   1. Confusion Metrics<br>
     Evaluation of the performance of a classification model is based on the counts of test records correctly and incorrectly predicted by the model. The confusion matrix provides a more insightful picture which is not only the performance of a predictive model, but also which classes are being predicted correctly and incorrectly, and what type of errors are being made. To illustrate, we can see how the 4 classification metrics are calculated (TP, FP, FN, TN), and our predicted value compared to the actual value in a confusion matrix is clearly presented in the below confusion matrix table.
-    <img src = "conf.png"><br>
+    <img src = "images/conf.png"><br>
   2. Precision<br>
     Precision is the ratio of True Positives to all the positives predicted by the model.Low precision: the more False positives the model predicts, the lower the precision.
   3. Recall(Sensitivity)<br>
     Recall (Sensitivity)is the ratio of True Positives to all the positives in your Dataset.Low recall: the more False Negatives the model predicts, the lower the recall.The idea of recall and precision seems to be abstract. Let me illustrate the difference in three real cases.
-  <img src = "conf1.png"><br>
+  <img src = "images/conf1.png"><br>
   4. F-1 Score<br>
     F-Measure provides a single score that balances both the concerns of precision and recall in one number. A good F1 score means that you have low false positives and low false negatives, so you’re correctly identifying real threats, and you are not disturbed by false alarms. An F1 score is considered perfect when it’s 1, while the model is a total failure when it’s 0.
-    <img src = "f1.png"><br>
+    <img src = "images/f1.png"><br>
   6. ROC-AUC<br>
     AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes.
-    <img src = "auc.png"><br>
+    <img src = "images/auc.png"><br>
   7. Accuracy<br>
     This is base measure which is tested first after the model is built.But due to some scenarios like unbalanced dataset we cannot soley depend on it.
     
